@@ -10,22 +10,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Renovando</title>
 </head>
 <body>
-    <header> <!-- ENCABEZADO, BARRA DE MENU Y LOGO -->
-        <nav class="header__nav">
-            <img class="header__logo" src="resources/favicon.ico">
-            <ul class="header__lista">
-                <li class="header__item"><a href="#">Inicio</a></li>
-                <li class="header__item"><a href="pages/contacto.html">Contacto</a></li>
-                <li class="header__item"><a href="pages/quesomos.html">Qué somos?</a></li>
-                <li class="header__item"><a href="pages/multimedia.html">Multimedia</a></li>
-                <li class="header__item"><a href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg beige">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="resources/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pages/quesomos.html">Qué somos?</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pages/multimedia.html">Multimedia</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="pages/sobre-nosotros.html">Sobre nosotros</a>
+                </li>
             </ul>
-        </nav>   
+            </div>
+        </div>
+        </nav>
     </header> 
     <main> <!-- TODO EL CONTENIDO -->
         <section> <!-- Seccion Bienvenida -->
@@ -35,14 +56,37 @@
             Architecto dignissimos a dolorum corrupti, consequuntur optio rem magni cumque vel provident ea. Suscipit recusandae necessitatibus delectus debitis, nesciunt asperiores, exercitationem, a eveniet vero quaerat quis officiis alias doloribus dolor.
             Incidunt sed sapiente quibusdam sunt adipisci similique voluptates ut. Veritatis ipsum sapiente aliquid eveniet et eum eos magni voluptatem sit deserunt numquam accusamus, voluptas odit velit quos omnis unde sed.</p>
         </section>
-        <section class="gallery"> <!-- Seccion galeria -->
+        <section>
+            <div id="carouselExampleControls" class="carousel slide w-100 h-25 p-3" data-bs-ride="carousel">
+            <div class="carousel-inner w-100 h-25 p-3">
+                <div class="carousel-item active">
+                <img src="resources/renovar1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="resources/renovar2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="resources/renovar3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        </section>
+        <!--  <section class="gallery"> Seccion galeria 
             <h1> Algunas imagenes de nuestros trabajos </h1>
             <article class="gallery__imgs">
                 <img class= "gallery__img" src="resources/renovar1.png" alt="renovar">
                 <img class= "gallery__img" src="resources/renovar2.jpg">
                 <img class= "gallery__img" src="resources/renovar3.jpg" alt="oficina"> 
             </article>
-        </section>
+        </section> -->
         <section class="section__descripcion"> <!-- Seccion texto -->
             <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur quisquam, consequuntur, accusamus amet enim culpa illo assumenda odit vitae eius provident doloremque autem maxime placeat, saepe accusantium? Modi, eos.
             Officia dolore, facilis consequuntur deserunt molestiae laudantium quisquam fugiat distinctio aut tempora nesciunt iusto harum soluta sapiente numquam autem delectus esse temporibus necessitatibus beatae corporis exercitationem. Natus, dolorum! Minima, nemo.
@@ -52,6 +96,8 @@
     </main>
     <footer>
         <p class="footer__derechos"> Todos los derechos reservados</p>
-    </footer>    
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>    
 </body>
 </html>

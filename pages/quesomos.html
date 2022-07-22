@@ -5,35 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../resources/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Renovando</title>
 </head>
 <body>
     <header> <!-- ENCABEZADO, BARRA DE MENU Y LOGO -->
-        <nav class="header__nav">
-            <img class="header__logo" src="../resources/favicon.ico">
-            <ul class="header__lista">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>
-                <li class="header__item"><a href="contacto.html">Contacto</a></li>
-                <li class="header__item"><a href="#">Qué somos?</a></li>
-                <li class="header__item"><a href="multimedia.html">Multimedia</a></li>
-                <li class="header__item"><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg beige">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../resources/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Qué somos?</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="multimedia.html">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
     </header>
     <main> <!-- de que trata la pagina -->
         <h1>¿Qué somos?</h1>
-        <p class="section__descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse fuga amet, illo voluptatibus, quidem, dolorum quae dicta consequuntur animi et molestiae accusamus consectetur? Pariatur eius delectus, laudantium error officia vero?
-        Sed sapiente earum est ad iste enim distinctio deleniti, non veniam deserunt fugit unde, delectus laboriosam possimus assumenda. Enim quaerat quisquam quibusdam doloremque dolor laborum eveniet quae deleniti nesciunt totam.
-        Totam eligendi labore porro delectus incidunt laboriosam quod ducimus magnam fugiat natus beatae, architecto magni consectetur qui, illo tenetur tempora in harum quas sed dolor, nulla consequuntur. Assumenda, beatae doloribus.
-        Dolor, laborum accusantium praesentium blanditiis et molestiae numquam animi debitis quidem nisi optio deserunt, voluptate eius sed eaque enim ipsum in magni, ad magnam reiciendis dicta. Earum necessitatibus ratione exercitationem.
-        Voluptatem eos, blanditiis optio voluptates exercitationem quisquam neque suscipit reprehenderit maiores error nemo adipisci fugiat rerum nobis cupiditate impedit dicta enim pariatur corporis ullam libero iste veniam! Inventore, iste esse. ipsum dolor sit amet, consectetur adipisicing elit. Iusto dolorum quos sequi, doloremque quo nostrum adipisci, voluptatum ut maxime, non id illum saepe officia aperiam corporis eos explicabo quas. Repellat.</p>
-        <div class="contenedor__img">
-            <img class="contenedor__img1" src="../resources/pintura.jpg" alt="pintura">
+        <p class="section__descripcion m-3">Somos un sitio dedicado a abrir un mundo de posibilidades a nuestros usuarios. Damos herramientas gratuitas para que todos puedan renovar su hogar. Pero tambien disponemos de membresias para quienes quieran llevar su renovacion al siguiente nivel</p>
+        <div class="row m-3">
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Membresia standard</h5>
+                <p class="card-text">Recibiran en su email semanalmente consejos para renovar su hogar.</p>
+                <a href="#" class="btn btn-primary">La quiero!</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Membresia premium</h5>
+                <p class="card-text">Ademas de los consejos recibiran descuentos exclusivos en pinturerias y ferreterias.</p>
+                <a href="#" class="btn btn-primary">La quiero!</a>
+            </div>
+            </div>
+        </div>
         </div>
     </main>
     <footer>
         <p class="footer__derechos"> Todos los derechos reservados</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
