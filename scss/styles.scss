@@ -1,0 +1,148 @@
+@import "variables";
+@import "footer";
+@import "mediaqueries";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: rgb(242, 242, 247);
+    background-color: rgb(189, 170, 146);
+    font-family: $font_h1;
+    padding: 10px 16px;
+    text-align: center;
+}
+
+.beige {
+    background-color: rgb(146, 146, 144);
+    
+}
+
+.section__descripcion__destacado{
+    font-family: $font_h1;
+    text-align: center;
+    background-color: rgb(218, 213, 207);
+    font-size: 40px;
+
+}
+
+/* seccion descripcion */
+
+.section__descripcion {
+    font-family: 'BIZ UDPGothic', sans-serif;
+    padding: 16px;
+    background-color: beige;
+}
+
+/* contacto */
+
+.section__contacto{
+    background-color: beige;
+}
+
+.section__critica{
+    background-color: rgb(145, 145, 117);
+    font-family: 'BIZ UDPGothic', sans-serif;
+    size: 20px;
+}
+
+.section__descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+/* seccion multimedia */
+
+.multimedia__grid{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "uno dos tres"
+                        "uno cuatro cuatro"
+                        "uno cinco cinco";
+    row-gap: 5px;
+    column-gap: 5px;
+    &__zoom:hover{
+        transform: scale(1.05,1.05);
+        transition: 1s;
+    }
+        .uno {
+            grid-area: uno;
+            background-image: url("../resources/renovadas1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .dos{
+            grid-area: dos;
+            background-image: url("../resources/renovadas2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .tres{
+            grid-area: tres;
+            background-image: url("../resources/renovadas3.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .cuatro{
+            grid-area: cuatro;
+            background-image: url("../resources/renovadas4.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .cinco{
+            grid-area: cinco;
+            background-image: url("../resources/renovar1.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+}
+
+
+
+.multimedia__img{
+    width: 24%;
+}
+
+.carousel-inner img {
+    width:1080x;
+    height:720px;
+}
+
+.ancianos{
+    width: 720px;
+    height: 480px;
+}
+
+.container{
+    background-color: beige;
+}
+
+.tamanio{
+    height: 720px;
+    width: 1280px;    
+}
+
+.rosa {
+    
+}
+
+.p1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
