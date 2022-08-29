@@ -15,8 +15,13 @@
         
     }
 
+    .texto__central{
+        width: auto;
+        color: rgb(255, 0, 119);
+    }
+
+    
     .multimedia__grid {
-        
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
         column-gap: 0px;

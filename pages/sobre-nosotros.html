@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>Renovando - Conocenos</title>
 </head>
-<body>
+<body class="body__contactus">
     <header> <!-- ENCABEZADO, BARRA DE MENU Y LOGO -->
-        <nav class="navbar navbar-expand-lg beige">
+        <nav class="navbar navbar-expand-lg header__navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../resources/favicon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top"></a>
+                    <img src="../resources/favicon.ico" alt="renovar" width="30" height="24" class="d-inline-block align-text-top"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -41,39 +41,79 @@
                 </ul>
                 </div>
             </div>
-            </nav>
+        </nav>
     </header>
     <main>
-        <h1>Sobre nosotros</h1>
-            <section class="container-fluid">
-                <article class="row">
-                    <div class="col-6 testing d-flex justify-content-center align-items-center parrafo">
-                        <p class="parrafo" >Somos Alberto y Juana Gomez y hace mas de 30 años nos dedicamos a lo que mas nos apaciona, darle una nueva vida a los hogares.<p>
-                    </div>
-                    <div class="col-6 xs-12 testing">
-                        <img class="img-fluid " src="../resources/abuelitos.jpg" alt="confianza">
-                    </div>
-                </article>
-                <article class="row">
-                    <div class="col-6 testing">
-                        <img class="img-fluid" src="../resources/abuelitos2.jpg" alt="experiencia">
-                    </div>
-                    <div class="col-6 col testing d-flex justify-content-center align-items-center">
-                        <h2 class="parrafo">Desde jovenes confiamos en nuestro proyecto y seguimos dedicandole todo nuestro tiempo para seguir creciendo juntos</h2>
-                    </div>
-                </article>
-                <article class="row" >
-                    <div class="col-6 testing d-flex justify-content-center align-items-center">
-                        <p class="parrafo" >Solo nos queda agradecer a nuestro publico, por ellos seguimos haciendo esto que amamos. Atte. Alberto y Juana.<p>
-                    </div>
-                    <div class="col-6 testing">
-                        <img class="img-fluid" src="../resources/abuelitos3.jpg" alt="compromiso">
-                    </div>
-                </article>
-            </section>
+        <h1 class="ms-2">Conocenos un poco mas</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="../resources/abuelitos.jpg" class="d-block w-100" alt="confianza">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="">Somos Alberto y Juana Gomez</h5>
+                <span class="carousel__texto">Hace mas de 30 años nos dedicamos a lo que mas nos apaciona, darle una nueva vida a los hogares.</span>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="../resources/abuelitos2.jpg" class="d-block w-100" alt="experiencia">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Mas de 50 años junto a ustedes</h5>
+                <span class="carousel__texto">Desde jovenes confiamos en nuestro proyecto y seguimos dedicandole todo nuestro tiempo para seguir creciendo juntos.</span>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="../resources/abuelitos3.jpg" class="d-block w-100" alt="constancia">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Gracias totales</h5>
+                <span class="carousel__texto">Solo nos queda agradecer a nuestro publico, por ellos seguimos haciendo esto que amamos. Atte. Alberto y Juana.</span>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
     </main>
-    <footer>
-        <p class="footer__derechos"> Todos los derechos reservados</p>
+    <footer class="footer__contactus">
+        <div class="container-fluid">
+            <div class="row bg-secondary text-white">
+                <div class="col-xs-12 col-md-4 col-lg-4 mb-4">
+                    <a href="#" class="h2 text-white text-decoration-none">Renovando</a>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4 mb-3">
+                    <p class="h3 mb-3">Redes</p>
+                    <div class="mb-1">
+                    <a class="text-white text-decoration-none" href="#">Instagram</a>
+                </div>
+                <div class="mb-1">
+                    <a class="text-white text-decoration-none" href="#">Facebook</a>
+                </div>
+                    <div class="mb-1">
+                    <a class="text-white text-decoration-none" href="#">Twitter</a>
+                </div>
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg-4">
+                    <p class="h3 mb-3">Mas info</p>
+                    <div class="mb-1">
+                        <a class="text-white text-decoration-none" href="#">Terminos y condiciones</a>
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-white text-decoration-none" href="#">Politicas de privacidad</a>
+                        <p class="footer__derechos mt-2"> Todos los derechos reservados 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
