@@ -280,7 +280,8 @@ carousel-item img {
     font-size: 60px;
     width: auto; }
   .desactivar {
-    display: none;
+    display: none; }
+  .space {
     margin-bottom: 40px; }
   .multimedia__grid {
     justify-content: center;
